@@ -1,0 +1,81 @@
+.mellstroyGames {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  justify-items: center;
+  padding: 50px;
+  gap: 40px;
+}
+
+.mellstroyGames h1 {
+  font-size: 36px;
+  text-align: center;
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+}
+
+.mellstroyGames p {
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 17px;
+  color: #e6e6e6;
+}
+
+.mellstroyGames img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  margin-top: 40px;
+  transition: transform 0.5s ease;
+}
+
+.mellstroyGames img:hover {
+  transform: scale(1.05);
+}
+
+.mgHighlights {
+  list-style: none;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.mgHighlights li {
+  margin-top: 15px;
+  font-size: 17px;
+  transition: transform 0.2s ease;
+}
+
+.mgHighlights li:hover {
+  transform: translateX(5px);
+}
+
+.mellstroyGames .mgBlock {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+.mellstroyGames .mgBlock h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.mellstroyGames .mgBlock strong {
+  color: #f4a261;
+}
+
+@media (max-width: 900px) {
+  .mellstroyGames {
+    grid-template-columns: 1fr;
+  }
+
+  .mellstroyGames h1 {
+    font-size: 28px;
+  }
+
+  .mellstroyGames img {
+    max-width: 320px;
+  }
+}

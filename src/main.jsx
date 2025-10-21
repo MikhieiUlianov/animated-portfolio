@@ -7,6 +7,7 @@ import { RouterProvider } from "react-router/dom";
 import MainPage from "./pages/mainPage.jsx";
 import HistoryPage from "./pages/HistoryPage.jsx";
 import RootLayout from "./pages/Root.jsx";
+import MellstroyGames from "./pages/MellstroyGames.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/history",
         element: <HistoryPage />,
+      },
+      {
+        path: "/mellstroy-games",
+        element: <MellstroyGames />,
       },
     ],
   },

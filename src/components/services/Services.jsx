@@ -47,10 +47,10 @@ const services = [
     counter: 35,
   },
   {
-    link: "/history",
+    link: "/mellstroy-games",
     id: 2,
     img: "/service2.png",
-    title: "Product Design",
+    title: "Mellstroy Games",
     counter: 23,
   },
   {

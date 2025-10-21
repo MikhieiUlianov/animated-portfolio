@@ -176,7 +176,7 @@ const Portfolio = () => {
             cy="80"
             r="70"
             fill="none"
-            stroke="#dd4c62"
+            stroke="#7b17c8"
             strokeWidth={20}
             style={{ pathLength: scrollYProgress }}
             transform="rotate(-90 80 80)"

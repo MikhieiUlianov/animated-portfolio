@@ -136,7 +136,7 @@ const Hero = () => {
             className="contactButton"
           >
             <svg viewBox="0 0 200 200" width="150" height="150">
-              <circle cx="100" cy="100" r="90" fill="pink" />
+              <circle cx="100" cy="100" r="90" fill="#7b17c8" />
               <path
                 id="innerCirclePath"
                 fill="none"
@@ -175,7 +175,7 @@ const Hero = () => {
           </Suspense>
         </Canvas>
         <div className="hImg">
-          <img src="/hero.png" alt="" />
+          <img src="/mell-logo-trsp.png" alt="mellstroy" />
         </div>
       </div>
     </div>
