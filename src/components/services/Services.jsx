@@ -54,10 +54,10 @@ const services = [
     counter: 23,
   },
   {
-    link: "/history",
+    link: "/socials",
     id: 3,
     img: "/service3.png",
-    title: "Branding",
+    title: "Социальные сети",
     counter: 46,
   },
 ];

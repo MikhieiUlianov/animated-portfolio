@@ -8,6 +8,7 @@ import MainPage from "./pages/mainPage.jsx";
 import HistoryPage from "./pages/HistoryPage.jsx";
 import RootLayout from "./pages/Root.jsx";
 import MellstroyGames from "./pages/MellstroyGames.jsx";
+import SocialsPage from "./pages/SocialsPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/mellstroy-games",
         element: <MellstroyGames />,
+      },
+      {
+        path: "/socials",
+        element: <SocialsPage />,
       },
     ],
   },

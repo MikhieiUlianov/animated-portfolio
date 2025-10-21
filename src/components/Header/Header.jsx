@@ -7,7 +7,7 @@ const Header = () => {
     { name: "Главная", path: "/" },
     { name: "История", path: "/history" },
     { name: "Mellstroy Games", path: "/mellstroy-games" },
-    { name: "О проекте", path: "/about" },
+    { name: "Социальные сети", path: "/socials" },
   ];
 
   return (
