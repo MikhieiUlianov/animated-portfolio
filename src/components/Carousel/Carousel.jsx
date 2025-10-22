@@ -21,12 +21,6 @@ const InfiniteCarousel = () => {
             <img src={`/mell-games.png`} alt="" />
           </div>
         ))}
-        {/* Duplicate for seamless looping */}
-        {/*  {[1, 2, 3, 4, 5].map((i) => (
-          <div className="carousel__item" key={`dup-${i}`}>
-            <img src={`/mell-games.png`} alt="" />
-          </div>
-        ))} */}
       </motion.div>
     </div>
   );

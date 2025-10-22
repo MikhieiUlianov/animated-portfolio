@@ -26,8 +26,6 @@ const Header = () => {
         </motion.h2>
       </div>
 
-      {/*     <VisitCounter /> */}
-
       <nav className="navLinks">
         {navLinks.map((link) => (
           <NavLink

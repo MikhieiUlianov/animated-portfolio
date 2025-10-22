@@ -49,11 +49,6 @@ const Hero = () => {
           <motion.p variants={awardVariants}>
             Очень смешные прямые трансляции и потрясающие события!
           </motion.p>
-          {/*   <motion.div variants={awardVariants} className="awardList">
-            <motion.img variants={awardVariants} src="/award1.png" alt="" />
-            <motion.img variants={awardVariants} src="/award2.png" alt="" />
-            <motion.img variants={awardVariants} src="/award3.png" alt="" />
-          </motion.div> */}
         </motion.div>
         {/* SCROLL SVG */}
         <motion.a

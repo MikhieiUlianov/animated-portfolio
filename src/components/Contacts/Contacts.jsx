@@ -1,6 +1,6 @@
 import "./contacts.css";
 import { useRef, useState } from "react";
-import { motion, useInView } from "motion/react";
+import { useInView } from "motion/react";
 import ContactSvg from "./ContactSvg";
 import Promote from "../Promote/Promote";
 
