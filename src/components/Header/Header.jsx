@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./header.css";
-import VisitCounter from "../VisitsCounter/VisitsCounter";
 
 const Header = () => {
   const navLinks = [

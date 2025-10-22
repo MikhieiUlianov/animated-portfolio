@@ -2,7 +2,7 @@ import "./contacts.css";
 import { useRef, useState } from "react";
 import { motion, useInView } from "motion/react";
 import ContactSvg from "./ContactSvg";
-import VisitCounterSection from "../VisitsCounter/VisitsCounter";
+import Promote from "../Promote/Promote";
 
 const listVariant = {
   initial: {
@@ -65,7 +65,7 @@ const Contact = () => {
           {success && <span>Your message has been sent!</span>}
           {error && <span>Something went wrong!</span>}
         </motion.form> */}
-        <VisitCounterSection />
+        <Promote />
       </div>
       <div className="cSection">
         <ContactSvg />
