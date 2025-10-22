@@ -1,0 +1,18 @@
+.carouselLogos {
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  width: 100%;
+}
+
+.carouselLogos.short {
+  width: 80%;
+}
+.carouselLogos__track {
+  display: flex;
+  gap: 2rem;
+}
+.carouselLogos__item-main img {
+  width: 100px;
+  height: 50px;
+  border-radius: 1rem;
+}
