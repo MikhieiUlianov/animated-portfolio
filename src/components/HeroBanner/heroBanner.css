@@ -1,0 +1,37 @@
+.heroBanner {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background: radial-gradient(circle at top, #2b0056, #0b0014 60%);
+  color: white;
+  max-height: 200px;
+  position: relative;
+}
+
+.heroBanner h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #c77dff, #9d4edd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+.heroBanner p {
+  font-size: 1.2rem;
+  color: #e0c7ff;
+}
+
+.glowLine {
+  height: 3px;
+  background: linear-gradient(90deg, #9d4edd, #c77dff);
+  margin: 30px auto 0;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(157, 78, 221, 0.6);
+}
+
+@media (max-width: 568px) {
+  .heroBanner h1 {
+    font-size: 2rem;
+  }
+}

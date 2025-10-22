@@ -1,7 +1,9 @@
 import InfiniteCarousel from "../components/Carousel/Carousel";
 import Quiz from "../components/Quiz/Quiz";
 import "../components/Quiz/quiz.css";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+import HeroBanner from "../components/HeroBanner/HeroBanner";
+import QuoteBlock from "../components/QuoteBlock/QuoteBlock";
 
 const QuizPage = () => {
   return (
@@ -22,7 +24,9 @@ const QuizPage = () => {
       <div className="carouselLogos short">
         <InfiniteCarousel />
       </div>
+      <HeroBanner />
       <Quiz />
+      <QuoteBlock />
     </>
   );
 };

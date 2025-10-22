@@ -1,6 +1,6 @@
 .promote {
   background: linear-gradient(90deg, #c100ff33, #ff00ed);
-  border-radius: 20%;
+  border-radius: 30px;
   color: white;
   display: flex;
   justify-content: center;
@@ -33,7 +33,6 @@
   opacity: 0.9;
 }
 
-/* small pop animation for number */
 @keyframes pop {
   0% {
     transform: scale(0.8);

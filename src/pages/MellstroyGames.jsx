@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import InfiniteCarousel from "../components/Carousel/Carousel";
 import Games from "../components/Games/Games";
 

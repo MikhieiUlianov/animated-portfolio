@@ -9,6 +9,7 @@ import HistoryPage from "./pages/HistoryPage.jsx";
 import RootLayout from "./pages/Root.jsx";
 import MellstroyGames from "./pages/MellstroyGames.jsx";
 import QuizPage from "./pages/QuizPage.jsx";
+import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </StrictMode>
 );

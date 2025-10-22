@@ -67,7 +67,6 @@
 }
 
 .follow {
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -109,6 +108,7 @@
 }
 
 .bubble {
+  margin-top: 30px;
   width: 100%;
   height: 100px;
   background-color: white;

@@ -1,4 +1,156 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import "./quiz.css";
+
+const questions = [
+  {
+    question: "Какое настоящее имя Меллстроя?",
+    options: ["Андрей Бурим", "Вадим Поле", "Дмитрий Иванов", "Иван Петров"],
+    answer: 0,
+  },
+  {
+    question: "В каком году Меллстрой начал свою карьеру стримера?",
+    options: ["2015", "2016", "2017", "2018"],
+    answer: 0,
+  },
+  {
+    question: "Какая платформа стала основной для стримов Меллстроя?",
+    options: ["Twitch", "YouTube", "Kick", "Trovo"],
+    answer: 2,
+  },
+  {
+    question: "Сколько зрителей было на стриме Меллстроя в марте 2024 года?",
+    options: ["500,000", "600,000", "700,000", "720,000"],
+    answer: 3,
+  },
+  {
+    question: "Какой рекорд установил Меллстрой в марте 2024 года?",
+    options: [
+      "Самый длинный стрим",
+      "Наибольшее количество зрителей на одном стриме",
+      "Самая большая сумма пожертвований",
+      "Самый быстрый рост подписчиков",
+    ],
+    answer: 1,
+  },
+];
+
+const facts = [
+  "Меллстрой проводил стримы длиной более 12 часов!",
+  "Первый стрим был на платформе Kick.",
+  "Любимый жанр игр Меллстроя — киберпанк и стратегии.",
+  "Меллстрой активно поддерживает игровое сообщество через мини-ивенты.",
+  "На одном из стримов было более 700,000 зрителей.",
+];
+
+const Quiz = () => {
+  const [current, setCurrent] = useState(0);
+  const [selected, setSelected] = useState(null);
+  const [score, setScore] = useState(0);
+  const [showResult, setShowResult] = useState(false);
+  const [fact, setFact] = useState(facts[0]);
+
+  const handleOptionClick = (index) => {
+    if (selected !== null) return;
+    setSelected(index);
+
+    if (index === questions[current].answer) setScore((s) => s + 1);
+    setFact(facts[Math.floor(Math.random() * facts.length)]);
+
+    setTimeout(() => {
+      if (current + 1 < questions.length) {
+        setCurrent((c) => c + 1);
+        setSelected(null);
+      } else {
+        setShowResult(true);
+      }
+    }, 1000);
+  };
+
+  const q = questions[current];
+  const progress = ((current + 1) / questions.length) * 100;
+
+  return (
+    <div className="quizContainer">
+      <div className="quizHeader">
+        <h1>Mellstroy Quiz</h1>
+        <div className="quizProgressBar">
+          <motion.div
+            className="progressFill"
+            initial={{ width: 0 }}
+            animate={{ width: `${progress}%` }}
+            transition={{ duration: 0.4 }}
+          />
+        </div>
+      </div>
+
+      <AnimatePresence mode="wait">
+        {!showResult ? (
+          <motion.div
+            key={current}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -30 }}
+            transition={{ duration: 0.4 }}
+            className="quizCard"
+          >
+            <h2>{q.question}</h2>
+            <div className="options">
+              {q.options.map((opt, idx) => (
+                <motion.button
+                  key={idx}
+                  className={`option ${
+                    selected === idx
+                      ? idx === q.answer
+                        ? "correct"
+                        : "wrong"
+                      : ""
+                  }`}
+                  onClick={() => handleOptionClick(idx)}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {opt}
+                </motion.button>
+              ))}
+            </div>
+            <div className="randomFact">
+              💡 <em>{fact}</em>
+            </div>
+          </motion.div>
+        ) : (
+          <motion.div
+            key="result"
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 30 }}
+            className="quizResult"
+          >
+            <h2>
+              Ваш результат: <span>{score}</span> / {questions.length}
+            </h2>
+            <motion.button
+              onClick={() => {
+                setCurrent(0);
+                setScore(0);
+                setSelected(null);
+                setShowResult(false);
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="restartBtn"
+            >
+              🔁 Попробовать снова
+            </motion.button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+export default Quiz;
+/* import { useState } from "react";
 import { motion } from "framer-motion";
 import "./quiz.css";
 
@@ -141,3 +293,4 @@ const TriviaQuiz = () => {
 };
 
 export default TriviaQuiz;
+ */

@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import LazyLoad from "react-lazyload";
 
 const Hero = lazy(() => import("../components/Hero/Hero"));

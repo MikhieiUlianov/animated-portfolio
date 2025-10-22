@@ -3,6 +3,7 @@ import ComputerModelContainer from "./computer/ComputerModelContainer";
 import "./services.css";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 const textVariants = {
   initial: {
@@ -78,12 +79,8 @@ const Services = () => {
           className="serviceList"
         >
           {services.map((service) => (
-            <Link to={service.link}>
-              <motion.div
-                variants={listVariants}
-                className="service"
-                key={service.id}
-              >
+            <Link to={service.link} key={uuidv4()}>
+              <motion.div variants={listVariants} className="service">
                 <div className="serviceIcon">
                   <img src={service.img} alt="" />
                 </div>
