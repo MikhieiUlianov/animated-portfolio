@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import LazyLoad from "react-lazyload";
 
 const Hero = lazy(() => import("../components/Hero/Hero"));
-const ServicesPage = lazy(() => import("../components/Services/Services"));
+const Services = lazy(() => import("../components/services/Services"));
 const Portfolio = lazy(() => import("../components/Portfolio/Portfolio"));
 const Contact = lazy(() => import("../components/Contacts/Contacts"));
 
@@ -52,7 +52,7 @@ const MainPage = () => {
         <Suspense fallback={"loading..."}>
           <LazyLoad height={"100vh"} offset={-100}>
             <section id="#services">
-              <ServicesPage />
+              <Services />
             </section>{" "}
           </LazyLoad>
         </Suspense>
