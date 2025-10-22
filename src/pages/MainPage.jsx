@@ -3,8 +3,8 @@ import { Helmet } from "react-helmet";
 import LazyLoad from "react-lazyload";
 
 const Hero = lazy(() => import("../components/Hero/Hero"));
-const Services = lazy(() => import("../components/services/Services"));
-const Portfolio = lazy(() => import("../components/portfolio/Portfolio"));
+const Services = lazy(() => import("../components/Services/Services"));
+const Portfolio = lazy(() => import("../components/Portfolio/Portfolio"));
 const Contact = lazy(() => import("../components/Contacts/Contacts"));
 
 const MainPage = () => {
