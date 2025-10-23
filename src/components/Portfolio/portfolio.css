@@ -5,6 +5,13 @@
   gap: 50px;
 }
 
+.pTitle {
+  font-size: 48px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 900;
+}
 .pList {
   position: sticky;
   top: 0;

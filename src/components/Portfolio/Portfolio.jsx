@@ -102,10 +102,13 @@ const ListItem = ({ item }) => {
 
 const Portfolio = () => {
   return (
-    <div className="portfolio">
-      {items.map((item) => (
-        <ListItem item={item} key={uuidv4()} />
-      ))}
+    <div className="pWrapper">
+      <h2 className="pTitle">Начать следить за Mellstroy:</h2>
+      <div className="portfolio">
+        {items.map((item) => (
+          <ListItem item={item} key={uuidv4()} />
+        ))}
+      </div>{" "}
     </div>
   );
 };
