@@ -28,7 +28,7 @@ const MainPage = () => {
         />
         <meta property="og:image" content="/mellstroy-og-image.png" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mellstroy.games" />
+        <meta property="og:url" content="https://mellstroy.game" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta

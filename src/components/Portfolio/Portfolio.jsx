@@ -23,9 +23,9 @@ const items = [
     desc: "Присоединяйтесь к стримам и общайтесь с Mellstroy в реальном времени.",
   },
   {
-    title: "Mellstroy Games",
-    link: "https://mellstroy.games",
-    img: "/socials/mell-games.png",
+    title: "Mellstroy Game",
+    link: "https://mellstroy.game",
+    img: "/socials/mell-game.png",
     desc: "Изучайте все его игры, проекты и новые релизы.",
   },
   {
@@ -108,7 +108,7 @@ const Portfolio = () => {
         {items.map((item) => (
           <ListItem item={item} key={uuidv4()} />
         ))}
-      </div>{" "}
+      </div>
     </div>
   );
 };

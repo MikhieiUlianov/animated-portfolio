@@ -16,7 +16,7 @@ const Games = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        Mellstroy Games — новый проект 2025 года
+        Mellstroy Game — новый проект 2025 года
       </motion.h1>
 
       <motion.div
@@ -27,9 +27,9 @@ const Games = () => {
         transition={{ duration: 0.7 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <h2>Что такое Mellstroy Games?</h2>
+        <h2>Что такое Mellstroy Game?</h2>
         <p>
-          <strong>Mellstroy Games</strong> — это новейшая разработка от самого
+          <strong>Mellstroy Game</strong> — это новейшая разработка от самого
           Меллстроя совместно с <em>1Win</em>. Это уникальная игровая платформа,
           где пользователи могут не только участвовать в розыгрышах, но и
           испытать удачу в серии мини-игр, челленджей и стрим-ивентов.
@@ -80,7 +80,7 @@ const Games = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <img src="/mellstroy-games.png" alt="Mellstroy Games" />
+        <img src="/mellstroy-game.png" alt="Mellstroy Games" />
       </motion.div>
     </div>
   );

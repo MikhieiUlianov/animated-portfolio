@@ -2,11 +2,11 @@ import { Helmet } from "react-helmet-async";
 import InfiniteCarousel from "../components/Carousel/Carousel";
 import Games from "../components/Games/Games";
 
-const MellstroyGames = () => {
+const MellstroyGame = () => {
   return (
     <>
       <Helmet>
-        <title>Mellstroy Games | Interactive 3D Projects</title>
+        <title>Mellstroy Game | Interactive 3D Project</title>
 
         <meta
           name="description"
@@ -19,20 +19,20 @@ const MellstroyGames = () => {
         />
         <meta
           property="og:description"
-          content="Explore Mellstroy Games: interactive 3D projects and fun experiences built with React and Three.js."
+          content="Explore Mellstroy Game: interactive 3D projects and fun experiences built with React and Three.js."
         />
         <meta property="og:image" content="/mellstroy-og-image.png" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mellstroy.games" />
+        <meta property="og:url" content="https://mellstroy.game" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Mellstroy Games | Interactive 3D Projects"
+          content="Mellstroy Game | Interactive 3D Projects"
         />
         <meta
           name="twitter:description"
-          content="Explore Mellstroy Games: interactive 3D projects and fun experiences built with React and Three.js."
+          content="Explore Mellstroy Game: interactive 3D projects and fun experiences built with React and Three.js."
         />
         <meta name="twitter:image" content="/mellstroy-og-image.png" />
       </Helmet>
@@ -42,4 +42,4 @@ const MellstroyGames = () => {
   );
 };
 
-export default MellstroyGames;
+export default MellstroyGame;

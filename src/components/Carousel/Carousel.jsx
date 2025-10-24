@@ -18,7 +18,7 @@ const InfiniteCarousel = () => {
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
         ].map((i) => (
           <div className="carouselLogos__item-main" key={uuidv4()}>
-            <img src={`/mell-games.png`} alt="" />
+            <img src={`/mell-game.png`} alt="" />
           </div>
         ))}
       </motion.div>

@@ -22,10 +22,10 @@ const listVariants = {
 const services = [
   { link: "/history", id: 1, img: "/service1.png", title: "История успеха" },
   {
-    link: "/mellstroy-games",
+    link: "/mellstroy-game",
     id: 2,
     img: "/service2.png",
-    title: "Mellstroy Games",
+    title: "Mellstroy Game",
   },
   { link: "/game", id: 3, img: "/service3.png", title: "Мини-игра" },
 ];

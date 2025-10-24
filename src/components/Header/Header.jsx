@@ -6,7 +6,7 @@ const Header = () => {
   const navLinks = [
     { name: "Главная", path: "/" },
     { name: "История", path: "/history" },
-    { name: "Mellstroy Games", path: "/mellstroy-games" },
+    { name: "Mellstroy Game", path: "/mellstroy-game" },
     { name: "Мини-игра", path: "/game" },
   ];
 

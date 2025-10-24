@@ -23,7 +23,7 @@ const HistoryPage = () => {
         />
         <meta property="og:image" content="/mellstroy-history-og.png" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mellstroy.games/history" />
+        <meta property="og:url" content="https://mellstroy.game/history" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta

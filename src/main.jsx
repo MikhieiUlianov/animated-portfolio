@@ -7,7 +7,7 @@ import { RouterProvider } from "react-router/dom";
 import MainPage from "./pages/MainPage.jsx";
 import HistoryPage from "./pages/HistoryPage.jsx";
 import RootLayout from "./pages/Root.jsx";
-import MellstroyGames from "./pages/MellstroyGames.jsx";
+import MellstroyGame from "./pages/MellstroyGame.jsx";
 import QuizPage from "./pages/QuizPage.jsx";
 import { HelmetProvider } from "react-helmet-async";
 
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
         element: <HistoryPage />,
       },
       {
-        path: "/mellstroy-games",
-        element: <MellstroyGames />,
+        path: "/mellstroy-game",
+        element: <MellstroyGame />,
       },
       {
         path: "/game",

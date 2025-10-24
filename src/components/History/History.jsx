@@ -113,7 +113,7 @@ const History = () => {
             whileHover={{ scale: 1.05, x: 4 }}
             whileTap={{ scale: 0.97 }}
           >
-            🎮 <strong>Mellstroy Games:</strong> совместно с 1Win запущено
+            🎮 <strong>Mellstroy Game:</strong> совместно с 1Win запущено
             онлайн-казино{" "}
             <a href="https://mellstroy-casinos.com/">
               <em>Mellstroy.game</em>

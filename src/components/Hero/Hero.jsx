@@ -132,7 +132,7 @@ const Hero = () => {
           href="/"
           className="contactLink"
         >
-          <Link to="/mellstroy-games">
+          <Link to="/mellstroy-game">
             <motion.div
               animate={{ rotate: [0, 360] }}
               transition={{
